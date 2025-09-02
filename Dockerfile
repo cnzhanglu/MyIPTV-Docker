@@ -31,7 +31,7 @@ LABEL version="${VERSION}"
 LABEL description="MyIPTV - Convert IPTV UDP multicast streams to HTTP"
 
 # 复制二进制文件
-COPY --from=builder /myiptv /usr/local/bin/myiptv
+COPY --from=builder myiptv /usr/local/bin/myiptv
 
 # 创建配置文件目录
 RUN mkdir -p /etc/myiptv && chmod 777 /etc/myiptv
