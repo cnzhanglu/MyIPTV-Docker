@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: '0 0 1 * *'  # 每周检查一次新版本
   workflow_dispatch:  # 允许手动触发
+  
+# 添加权限配置
+permissions:
+  contents: read  # 读取代码的权限（必要）
+  packages: write  # 推送镜像到GHCR的权限（关键）
 
 jobs:
   check-version:
