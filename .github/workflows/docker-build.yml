@@ -2,7 +2,7 @@ name: Build and Push MyIPTV Docker Image
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # 每天检查一次新版本
+    - cron: '0 0 1 * *'  # 每周检查一次新版本
   workflow_dispatch:  # 允许手动触发
 
 jobs:
