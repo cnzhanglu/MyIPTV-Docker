@@ -22,7 +22,7 @@ RUN if [ "$TARGETARCH" = "amd64" ]; then \
     chmod +x myiptv
 
 # 最终镜像：使用Ubuntu最小化版本以减小体积
-FROM ubuntu:22.04-minimal
+FROM ubuntu:22.04
 
 ARG VERSION
 
